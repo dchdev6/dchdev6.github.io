@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2C3539;
+    overflow-x: hidden;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  height: 50vh;
+  width: 100%;
+  padding: 0 1%;
+}
+
+.content {
+    position: absolute;
+    font-weight: lighter;
+    left: 15%;
+    padding-top: 5%;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 150px;
+    font-weight: bold;
+    width: 150%; /* Set to 100% to span the whole screen */
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.content h2 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    width: 180%;
+    font-weight: 300;
+    padding: 4%;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table p {
+   width: 150%;
+    padding-top: 50px;
+    font-weight:bolder;
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.question p {
+    width: 150%;
+    padding-top: 50px;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-arrow-up {
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 200px;
+  margin-bottom: 50px;
+}
+
+.arrow {
+  padding-left: 430px;
+}
+/* NAVIGATION BAR */
+nav {
+}
+
+nav:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 70px;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+
+nav ul {
+  float: right;
+  padding-top: 20px;
+  margin-right: 80px;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 13px;
+  padding: 8px 15px; /* Adjusted padding */
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  background: white;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul ul {
+    position: absolute;
+    top:50px; /* Adjusted top position */
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s, opacity 0.3s; /* Added opacity transition */
+  }
+  
+  nav ul ul ul {
+    top: 0px; /* Adjusted top position */
+  }
+  
+  nav ul li:hover > ul {
+    top: 45px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+}
+
+nav ul ul li a {
+  line-height: 45px;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -155px;
+  left: 150px;
+}
+
+.show,
+.boxes,
+input {
+  display: none;
+}
+
+.fa-plus {
+  font-size: 10px;
+  margin-left: 40px;
+}
+
+
+
+
+/*----COURSE----*/
+
+
+
+.icon:hover {
+    box-shadow: 0 0 20px 0px rgba(250, 248, 248, 0.822);
+}
+
+/* Additional CSS for table styling */
+.table {
+  margin-top: 20px;
+}
+
+table { 
+  width: 150%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+td {
+  color: white;
+  text-align: center;
+}
