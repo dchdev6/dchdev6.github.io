@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+       
+        html,body {
+            margin: 0;
+            padding: 0;
+            background-color: #f45fff;
+            color: white;
+        }
+
+        .carousel-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            animation: bounce 1s;
+            max-width: 50%; /* Set the maximum width to 50% of its container */
+            max-height: 50%; /* Set the maximum height to 50% of its container */
+            border-radius: 20px;
+            margin-left: 280px;
+            border: 10px solid white;
+        }
+
+        #title {
+            font-family: 'Kaushan Script', cursive;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            animation: fade 2s infinite;
+        }
+
+        p {
+            font-family: 'Shadows Into Light', cursive;
+            text-align: justify;
+            letter-spacing: 2px;
+            padding: 10px;
+            font-size: 12pt;
+            animation: fade 2s;
+        }
+
+        b {
+            font-size: 20pt;
+        }
+
+        .footer {
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .footer h1 {
+            color: white;
+            letter-spacing: 2px;
+            font-size: 10pt;
+            order: 1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer p {
+            color: white;
+            font-size: 10pt;
+            font-family: monospace;
+            order: 2;
+        }
+        .audio {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            background-color: white;
+            font-family: monospace;
+            color: #FF5F9E;
+            width: 100px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(110%);
+            
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+            40% {transform: translateY(-30px);} 
+            60% {transform: translateY(-15px);}
+        }
+    </style>
+   
+    <title>LETTER FOR MY BABY GLACE</title>
+
+</head>
+<body>
+    <section class="container-fluid mb-5">
+        <div class="row-fluid mt-2">
+            <div class="col align-self-center">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <img src="pic1.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Add other carousel items here similarly -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row-fluid">
+            <div class="audio">
+                <audio id="mp" src="song.mp3" autoplay loop></audio>
+                <button class="btn" onclick="play()">PLAY</button>
+            </div>
+            <div class="col-sm">
+                <h1 id="title">My Message</h1>
+                <p>Hi love I'm sorry if i was late and naparamdam ko sayong di ako nag effort pero i want to make it up with you of course di ko hahayaang malungkot ka sa birthday mo mahal ko, have a blessed birthday my love enjoy your day love dahil ito ang kaarawan mo dapat happy ka. Pasensya na sa mga kasalanan ko at minsan late ako i took time and make this one for you  love. I wish for your good health and bigyan kapa ng dakilang maylikha ng madami pang birthday. I hope soon we celebrate your birthday yung magsasama na tayo together saya siguro non tas gagala tayo kung saan saan. I bought the gift na papunta na dyan sayo. Nagpapasalamat ako sa diyos na nakilala kita and I'm excited to continue our story and chapters.  Hanggang dito nlng siguro love i need to rest pa. I love you ulit love na love ka ng baby mo ingat ka palagi love ah, goodluck din sa exam mo mamaya kaya mo yan love tiwala lg and I'm proud of you i love you mahal ko. Bye love!! more birthdays to come mwaaa!!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function play(){
+            let audio = document.getElementById("mp");
+            audio.play();
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
